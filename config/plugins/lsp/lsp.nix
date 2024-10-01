@@ -8,6 +8,11 @@
       inlayHints = true;
       servers = {
         clangd = {enable = true;};
+        rust-analyzer = {
+          enable = true;
+          installCargo = false;
+          installRustc = false;
+        };
         html = {enable = true;};
         lua-ls = {enable = true;};
         nil-ls = {enable = true;};
